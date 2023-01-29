@@ -26,6 +26,7 @@ string[] CreateArray()
         Console.Write($"Введите значение массива которое хотите сохранить под индексом {i} -> ");
         array[i]  = Console.ReadLine();
     }
+    Console.WriteLine();
     return array;
 }
 
