@@ -9,6 +9,8 @@
 
 string[] arrayStr = CreateArray();
 
+int minElement = MinElementInArray(arrayStr);
+
 string[] CreateArray()
 {
     string[] array;
@@ -23,3 +25,12 @@ string[] CreateArray()
     return array;
 }
 
+int MinElementInArray(string[] arrayStr)
+{
+    int count = 0;
+    for (int i = 0; i < arrayStr.Length; i++)
+    {
+        if (arrayStr[i].Length <= 3)  count++;
+    }
+    return count;
+}
