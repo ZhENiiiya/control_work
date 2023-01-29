@@ -6,3 +6,20 @@
 // При решении не рекомендуется пользоваться коллекциями, 
 // лучше обойтись исключительно  массивами.
 
+
+string[] arrayStr = CreateArray();
+
+string[] CreateArray()
+{
+    string[] array;
+    Console.Write("Задайте размер массива - ");
+    int x = int.Parse(Console.ReadLine());
+    array = new string[x];
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"Введите значение массива которое хотите сохранить под индексом {i} -> ");
+        array[i]  = Console.ReadLine();
+    }
+    return array;
+}
+
